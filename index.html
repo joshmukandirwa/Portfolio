@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josué Mukandirwa — README.md</title>
+<meta name="description" content="Portfolio de Josué Mukandirwa, développeur front-end junior.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- FILE TAB -->
+<div class="tabbar">
+  <div class="tab active">
+    <span class="tab-dot"></span> JOSH.mk
+  </div>
+  <div class="tabbar-meta">josue-mukandirwa/portfolio — <span class="branch">main</span></div>
+  <button id="toc-toggle" class="toc-toggle" aria-label="Sommaire" aria-expanded="false">☰</button>
+</div>
+
+<div class="layout">
+
+  <!-- SIDEBAR TOC -->
+  <aside class="sidebar" id="sidebar">
+    <p class="sidebar-label"># Sommaire</p>
+    <nav class="toc">
+      <a href="#intro">Intro</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#projets">Projets</a>
+      <a href="#stack">Stack</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">
+      <span id="theme-icon">☾</span> <span id="theme-label">Mode sombre</span>
+    </button>
+  </aside>
+
+  <!-- MARKDOWN CONTENT -->
+  <main class="doc">
+
+    <section id="intro" class="md-section reveal">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <h1># Josué Mukandirwa<span class="hcursor">_</span></h1>
+          <p class="blockquote">&gt; Un développeur qui apprend vite, et qui préfère refaire une fonction trois fois plutôt que la laisser bancale.</p>
+
+          <div class="badges">
+            <span class="badge"><span class="badge-key">status</span><span class="badge-val val-amber">junior_dev</span></span>
+            <span class="badge"><span class="badge-key">exp</span><span class="badge-val val-cyan">1 an</span></span>
+            <span class="badge"><span class="badge-key">stack</span><span class="badge-val val-green">html_css_js</span></span>
+            <span class="badge"><span class="badge-key">dispo</span><span class="badge-val val-green">oui</span></span>
+          </div>
+
+          <p>Je code en HTML, CSS et JavaScript purs — pas de framework, pas de raccourci. Ça fait un an que j'apprends sérieusement, et ce site, je l'ai écrit ligne par ligne pour le prouver.</p>
+
+          <div class="cta-row">
+            <a href="#projets" class="btn btn-fill">voir_projets()</a>
+            <a href="#contact" class="btn btn-outline">me_contacter()</a>
+          </div>
+        </div>
+
+        <figure class="portrait-frame">
+          <figcaption class="portrait-tab">
+            <span class="tab-dot tab-dot-green"></span> profile.jpg
+          </figcaption>
+          <div class="portrait-wrap reveal" id="portrait-wrap">
+            <img src="profile.jpg" alt="Portrait de Josué Mukandirwa" class="portrait-img">
+            <span class="scan-line"></span>
+            <span class="scan-grid"></span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <section id="parcours" class="md-section reveal">
+      <h2>## Parcours</h2>
+      <p class="blockquote">&gt; Pas quinze ans d'expérience. Juste une progression honnête, projet après projet.</p>
+
+      <ul class="timeline">
+        <li>
+          <span class="tl-marker"></span>
+          <div>
+            <span class="tl-date">2025</span>
+            <p>J'ai ouvert mon premier éditeur de code et je n'ai plus arrêté depuis.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tl-marker"></span>
+          <div>
+            <span class="tl-date">2025</span>
+            <p>Mon premier projet est passé en ligne. Petit projet, grande fierté.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tl-marker tl-marker-active"></span>
+          <div>
+            <span class="tl-date">2026</span>
+            <p>Je code plus vite et plus proprement, avec trois projets sur le feu en ce moment.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="rule">
+
+    <section id="projets" class="md-section reveal">
+      <h2>## Projets</h2>
+      <p class="progress-label">1 projet fini, 3 en chantier <span class="progress-track"><span class="progress-fill" style="width:25%"></span></span></p>
+
+      <ul class="checklist">
+        <li class="check-item done">
+          <span class="check-box">✓</span>
+          <div class="check-body">
+            <h3>[Nom du projet 1]</h3>
+            <p>[Décris ici en 1-2 phrases ce que fait le projet et le problème qu'il résout.]</p>
+            <div class="inline-tags"><code>HTML</code><code>CSS</code><code>JS</code></div>
+            <a href="#" class="link-arrow">→ voir le projet</a>
+          </div>
+        </li>
+        <li class="check-item">
+          <span class="check-box"></span>
+          <div class="check-body">
+            <h3>[Nom du projet 2]</h3>
+            <p>[Description courte du projet en cours.]</p>
+            <div class="inline-tags"><code>HTML</code><code>CSS</code><code>JS</code></div>
+            <span class="wip-label">en chantier</span>
+          </div>
+        </li>
+        <li class="check-item">
+          <span class="check-box"></span>
+          <div class="check-body">
+            <h3>[Nom du projet 3]</h3>
+            <p>[Description courte du projet en cours.]</p>
+            <div class="inline-tags"><code>HTML</code><code>CSS</code><code>JS</code></div>
+            <span class="wip-label">en chantier</span>
+          </div>
+        </li>
+        <li class="check-item">
+          <span class="check-box"></span>
+          <div class="check-body">
+            <h3>[Nom du projet 4]</h3>
+            <p>[Description courte du projet en cours.]</p>
+            <div class="inline-tags"><code>HTML</code><code>CSS</code><code>JS</code></div>
+            <span class="wip-label">en chantier</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="rule">
+
+    <section id="stack" class="md-section reveal">
+      <h2>## Stack</h2>
+      <table class="md-table">
+        <thead>
+          <tr><th>Catégorie</th><th>Outils</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Langages</td><td><code>HTML5</code> <code>CSS3</code> <code>JavaScript</code></td></tr>
+          <tr><td>Outils</td><td><code>Git</code> <code>GitHub</code> <code>Vercel</code></td></tr>
+          <tr><td>Services</td><td><code>EmailJS</code> <code>Cloudinary</code></td></tr>
+          <tr><td>Design</td><td><code>Figma</code> <code>Responsive</code></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="rule">
+
+    <section id="certifications" class="md-section reveal">
+      <h2>## Certifications</h2>
+      <p class="blockquote">&gt; Ce que j'ai appris, officiellement.</p>
+      <ol class="cert-list">
+        <li>
+          <h3>[Nom certification 1]</h3>
+          <p>[Organisme] — [ce que ça t'a apporté, en une phrase.]</p>
+          <a href="#" class="link-arrow">→ voir la preuve</a>
+        </li>
+        <li>
+          <h3>[Nom certification 2]</h3>
+          <p>[Organisme] — [ce que ça t'a apporté, en une phrase.]</p>
+          <a href="#" class="link-arrow">→ voir la preuve</a>
+        </li>
+      </ol>
+    </section>
+
+    <hr class="rule">
+
+    <section id="contact" class="md-section reveal">
+      <h2>## Contact</h2>
+      <p class="blockquote">&gt; Pas besoin d'un pitch parfait. Écris-moi, on en discute.</p>
+
+      <div class="contact-grid">
+
+        <div class="code-block">
+          <div class="code-block-head">
+            <span>contact.js</span>
+            <button id="copy-btn" class="copy-btn">copier</button>
+          </div>
+          <pre id="contact-code"><span class="tok-kw">const</span> <span class="tok-var">contact</span> = {
+  email: <span class="tok-str">"josue@example.com"</span>,
+  linkedin: <span class="tok-str">"linkedin.com/in/josue-mukandirwa"</span>,
+  github: <span class="tok-str">"github.com/josue-mukandirwa"</span>,
+  status: <span class="tok-str">"disponible"</span>
+};</pre>
+        </div>
+
+        <form id="message-form" class="msg-form" novalidate>
+          <div class="msg-form-head">
+            <span>message.form</span>
+            <span class="tab-dot tab-dot-amber"></span>
+          </div>
+          <div class="msg-form-body">
+
+            <label class="field">
+              <span class="field-key">nom</span>
+              <input type="text" id="f-nom" name="nom" placeholder="Ton nom" required>
+            </label>
+
+            <label class="field">
+              <span class="field-key">email</span>
+              <input type="email" id="f-email" name="email" placeholder="ton@email.com" required>
+            </label>
+
+            <label class="field">
+              <span class="field-key">note</span>
+              <div class="stars" id="stars" role="radiogroup" aria-label="Note sur 5 étoiles">
+                <button type="button" class="star" data-value="1" role="radio" aria-checked="false" aria-label="1 étoile">★</button>
+                <button type="button" class="star" data-value="2" role="radio" aria-checked="false" aria-label="2 étoiles">★</button>
+                <button type="button" class="star" data-value="3" role="radio" aria-checked="false" aria-label="3 étoiles">★</button>
+                <button type="button" class="star" data-value="4" role="radio" aria-checked="false" aria-label="4 étoiles">★</button>
+                <button type="button" class="star" data-value="5" role="radio" aria-checked="false" aria-label="5 étoiles">★</button>
+              </div>
+              <input type="hidden" id="f-note" name="note" value="0" required>
+            </label>
+
+            <label class="field">
+              <span class="field-key">message</span>
+              <textarea id="f-message" name="temoignage" rows="3" placeholder="Ton message ou témoignage..." required></textarea>
+            </label>
+
+            <label class="field">
+              <span class="field-key">photo</span>
+              <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Choisir une photo">
+                <div class="dropzone-inner" id="dropzone-inner">
+                  <span class="dropzone-icon">⇧</span>
+                  <p>Glisse une photo ici<br><span class="dz-sub">ou clique pour choisir un fichier</span></p>
+                </div>
+                <img id="dropzone-preview" class="dropzone-preview" alt="Aperçu de la photo" hidden>
+              </div>
+              <input type="file" id="f-photo" name="photo" accept="image/*" hidden required>
+            </label>
+
+            <button type="submit" id="submit-btn" class="btn btn-fill btn-block">envoyer_message()</button>
+
+            <div class="console-out" id="console-out" aria-live="polite"></div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="doc-footer">
+      <p>// &copy; 2026 - Josué Mukandirwa | Touts droits réservés</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
